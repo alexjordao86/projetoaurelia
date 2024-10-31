@@ -1,0 +1,122 @@
+/* Estilos gerais para o container da página de campanhas */
+.chakra-container {
+  padding: 20px; /* Espaçamento interno do container */
+  background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+/* Barra de rolagem horizontal de categorias */
+.categories-scroll {
+  display: flex; /* Exibe as categorias em linha usando flexbox */
+  align-items: center; /* Centraliza verticalmente as categorias */
+  overflow-x: auto; /* Permite rolagem horizontal quando necessário */
+  padding: 10px 0; /* Espaçamento superior e inferior da barra */
+}
+
+.scroll-arrow {
+  display: flex; /* Exibe as setas de rolagem como flexbox */
+}
+
+.scroll-button {
+  background: transparent; /* Remove o fundo padrão do botão */
+  border: none; /* Remove as bordas padrão do botão */
+  cursor: pointer; /* Cursor de mãozinha ao passar sobre o botão */
+}
+
+.scroll-container {
+  display: flex; /* Exibe as categorias em linha */
+  gap: 20px; /* Espaçamento entre cada item de categoria */
+}
+
+.scroll-item {
+  flex: none; /* Impede que os itens se expandam automaticamente */
+}
+
+.category-item {
+  padding: 10px 20px; /* Espaçamento interno dos itens de categoria */
+  background-color: #c6a05f; /* Cor de fundo dourada para as categorias */
+  border-radius: 20px; /* Bordas arredondadas */
+  color: white; /* Cor do texto branca */
+  font-weight: bold; /* Negrito para destacar as categorias */
+}
+
+/* Grid de campanhas */
+.campaigns-grid {
+  display: grid; /* Exibe as campanhas em formato de grade */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanhos iguais */
+  gap: 20px; /* Espaçamento entre os cards de campanhas */
+  padding: 20px 0; /* Espaçamento superior e inferior no grid */
+}
+
+.campaign-card {
+  list-style: none; /* Remove as bolinhas dos itens da lista */
+  cursor: pointer; /* Torna o card inteiro clicável */
+}
+
+.chakra-linkbox {
+  position: relative; /* Define o posicionamento relativo do card */
+  background: white; /* Cor de fundo branca para o card */
+  border-radius: 10px; /* Bordas arredondadas do card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do card */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.chakra-linkbox:hover {
+  transform: scale(1.05); /* Aumenta o card ligeiramente ao passar o mouse */
+}
+
+.campaign-content img {
+  width: 100%; /* Largura total da imagem dentro do card */
+  height: 200px; /* Altura fixa da imagem */
+  object-fit: cover; /* Cobre o espaço da imagem sem distorcer */
+  border-radius: 10px 10px 0 0; /* Arredonda as bordas superiores da imagem */
+}
+
+.campaign-details {
+  padding: 15px; /* Espaçamento interno dos detalhes da campanha */
+}
+
+.campaign-category {
+  color: #c6a05f; /* Cor dourada para a categoria */
+  font-weight: bold; /* Negrito para a categoria */
+}
+
+.campaign-title {
+  font-size: 18px; /* Tamanho da fonte do título da campanha */
+  font-weight: bold; /* Negrito para o título */
+  color: #67171f; /* Cor vinho para o título */
+  text-decoration: none; /* Remove sublinhado do título */
+  transition: text-decoration 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.chakra-linkbox:hover .campaign-title {
+  text-decoration: underline; /* Sublinhado ao passar o mouse sobre o título */
+}
+
+.campaign-progress {
+  display: flex; /* Exibe o progresso em linha */
+  justify-content: space-between; /* Espaçamento igual entre os itens de progresso */
+  margin: 10px 0; /* Espaçamento acima e abaixo do progresso */
+  font-size: 14px; /* Tamanho menor para o texto do progresso */
+  color: #666; /* Cor cinza para o texto do progresso */
+}
+
+.progress-bar {
+  background-color: #eee; /* Fundo cinza claro para a barra de progresso */
+  border-radius: 10px; /* Bordas arredondadas da barra de progresso */
+  height: 10px; /* Altura fixa da barra de progresso */
+  width: 100%; /* Largura total da barra */
+  margin: 5px 0; /* Espaçamento acima e abaixo da barra */
+}
+
+.progress-fill {
+  background-color: #67171f; /* Cor vinho para o preenchimento da barra */
+  height: 100%; /* Altura total do preenchimento */
+  border-radius: 10px; /* Bordas arredondadas do preenchimento */
+}
+
+.campaign-goal {
+  display: flex; /* Exibe o valor arrecadado e a meta em linha */
+  justify-content: space-between; /* Espaçamento igual entre os valores */
+  font-weight: bold; /* Negrito para os valores */
+  color: #444; /* Cor escura para os textos */
+}

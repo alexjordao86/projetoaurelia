@@ -1,0 +1,129 @@
+/* Estilos para a barra de navegação */
+nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Exibe os itens como flexbox */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens de forma inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 8px 16px; /* Espaçamento interno dos links */
+    background-color: #c6a05f; /* Cor de fundo dourada */
+    color: white; /* Cor do texto branca */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave ao alterar a cor de fundo */
+}
+
+nav ul li a:hover {
+    background-color: #67171f; /* Cor de fundo vinho ao passar o mouse */
+}
+
+/* Estilos para o container de campanhas */
+.chakra-container {
+    padding: 20px; /* Espaçamento interno ao redor das campanhas */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+/* Grid de campanhas com 3 colunas */
+.campaigns-grid {
+    display: grid; /* Exibe as campanhas como grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre os cards de campanhas */
+    padding: 20px 0; /* Espaçamento acima e abaixo do grid */
+}
+
+.campaign-card {
+    list-style: none; /* Remove as bolinhas dos itens da lista */
+    cursor: pointer; /* Cursor de mãozinha ao passar sobre os cards */
+}
+
+.chakra-linkbox {
+    position: relative; /* Necessário para manipulação de posição de elementos internos */
+    background: white; /* Cor de fundo branca */
+    border-radius: 10px; /* Bordas arredondadas do card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor do card */
+    transition: transform 0.3s ease; /* Transição suave ao aplicar escala */
+}
+
+.chakra-linkbox:hover {
+    transform: scale(1.05); /* Amplia o card ao passar o mouse */
+}
+
+.campaign-content img {
+    width: 100%; /* Imagem ocupa 100% da largura do card */
+    height: 200px; /* Altura fixa da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorções */
+    border-radius: 10px 10px 0 0; /* Arredonda as bordas superiores da imagem */
+}
+
+.campaign-details {
+    padding: 15px; /* Espaçamento interno nos detalhes da campanha */
+}
+
+.campaign-category {
+    color: #c6a05f; /* Cor dourada para o texto da categoria */
+    font-weight: bold; /* Texto da categoria em negrito */
+}
+
+.campaign-title {
+    font-size: 18px; /* Tamanho da fonte para o título da campanha */
+    font-weight: bold; /* Título em negrito */
+    color: #67171f; /* Cor vinho para o título */
+    text-decoration: none; /* Remove sublinhado do título */
+    transition: text-decoration 0.3s ease; /* Transição suave ao adicionar sublinhado */
+}
+
+.chakra-linkbox:hover .campaign-title {
+    text-decoration: underline; /* Adiciona sublinhado ao título quando o card é destacado */
+}
+
+.campaign-progress {
+    display: flex; /* Exibe as informações de progresso em linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens de forma igual */
+    margin: 10px 0; /* Espaçamento acima e abaixo da barra de progresso */
+    font-size: 14px; /* Tamanho da fonte reduzido */
+    color: #666; /* Cor cinza para o texto de progresso */
+}
+
+.progress-bar {
+    background-color: #eee; /* Fundo cinza claro para a barra de progresso */
+    border-radius: 10px; /* Bordas arredondadas da barra de progresso */
+    height: 10px; /* Altura fixa da barra */
+    width: 100%; /* Largura total da barra */
+    margin: 5px 0; /* Espaçamento acima e abaixo da barra */
+}
+
+.progress-fill {
+    background-color: #67171f; /* Cor vinho para a parte preenchida da barra */
+    height: 100%; /* Altura total da barra preenchida */
+    border-radius: 10px; /* Bordas arredondadas do preenchimento */
+}
+
+.campaign-goal {
+    display: flex; /* Exibe as metas e valores em linha */
+    justify-content: space-between; /* Espaçamento igual entre os elementos */
+    font-weight: bold; /* Negrito para destacar os valores */
+    color: #444; /* Cor escura para os textos de meta */
+}
+
+/* Estilos para o botão "Ver Mais" */
+.view-more-button {
+    background-color: #67171f; /* Cor vinho para o botão */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    font-weight: bold; /* Negrito para o texto do botão */
+    margin-top: 20px; /* Espaçamento superior */
+    display: inline-block; /* Exibe como bloco inline */
+}
+
+.button-icon {
+    margin-left: 5px; /* Espaçamento entre o texto e o ícone */
+}

@@ -1,0 +1,338 @@
+/* Container geral para toda a página */
+.sobre-nos {
+    max-width: 1200px; /* Limita a largura para melhorar a legibilidade */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    padding: 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+  }
+  
+  /* Seção 1: Título principal e imagem de fundo */
+  .sobre-nos {
+    position: relative; /* Necessário para que os elementos filhos usem o contexto de posicionamento */
+}
+
+.css-1owcxy1, .chakra-image.css-1qtvm2r {
+    height: 400px; /* Define a altura fixa */
+    width: 100%; /* Define a largura para ocupar todo o espaço do contêiner */
+    object-fit: cover; /* Mantém a proporção da imagem e corta as bordas se necessário */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+}
+
+/* Ajusta a posição e o estilo do contêiner do texto */
+.css-1032stv {
+    position: absolute; /* Posiciona o contêiner do texto sobre a imagem */
+    top: 50%; /* Centraliza verticalmente o texto */
+    right: 20%; /* Alinha o texto à direita da imagem */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    text-align: right; /* Alinha o texto à direita */
+    z-index: 2; /* Garante que o texto fique sobre a imagem */
+    background-color: transparent; /* Remove qualquer cor de fundo */
+}
+
+/* Define a cor branca para o título */
+.css-1t2km83 {
+    color: white !important; /* Força a cor do texto para branco */
+    font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+    line-height: 1.2; /* Define o espaçamento entre linhas */
+}
+
+
+.css-rfn5jw {
+    position: relative;
+    overflow: hidden;
+}
+  
+  /* Seção 2: Descrição da plataforma */
+
+  /* Seção principal de fundo vermelho */
+.css-1s9b6is {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    background-color: #67171f; /* Fundo vermelho */
+    padding: 40px 0; /* Espaçamento superior e inferior */
+    width: 100%; /* Garante que ocupe a largura total da página */
+    box-sizing: border-box; /* Inclui padding na largura */
+}
+
+/* Contêiner de texto sem fundo */
+.chakra-container.css-atj1h6 {
+    width: 80%; /* Define a largura dos parágrafos em 80% */
+    text-align: center; /* Centraliza o texto */
+    background-color: transparent !important; /* Remove o fundo branco */
+    color: white; /* Texto em branco para contraste */
+    padding: 10px 0; /* Adiciona espaçamento vertical */
+}
+
+/* Estilização dos parágrafos na seção 2 */
+.css-r6z5ec p.chakra-text {
+    color: #ffffff !important; /* Texto em branco */
+    line-height: 1.6; /* Altura da linha para boa legibilidade */
+    margin-bottom: 15px; /* Espaço entre os parágrafos */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Imagem ao lado do texto */
+.css-1cc8x7i img.chakra-image {
+    max-width: 200px; /* Tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção */
+    margin-top: 10px; /* Espaçamento entre imagem e parágrafos */
+}
+
+  
+  /* Seção 3: Funcionamento */
+.chakra-heading.css-1v99fuf {
+    position: absolute; /* Posiciona o contêiner do texto sobre a imagem */
+    top: 50%; /* Centraliza verticalmente o texto */
+    right: 20%; /* Alinha o texto à direita da imagem */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-size: 2rem;
+    color: white; /* Altera a cor do texto para branco */
+    font-weight: bold;
+    text-align: right; /* Alinha o texto à direita */
+    z-index: 2; /* Garante que o texto fique sobre a imagem */
+    margin-bottom: 20px;
+}
+
+.css-fzgvgj {
+    position: relative; /* Necessário para que o texto use o contexto de posicionamento */
+    overflow: hidden;
+}
+
+.css-fzgvgj img {
+    width: 100%;
+    height: 400px; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Mantém a proporção da imagem, cortando as bordas se necessário */
+    object-position: center; /* Centraliza a imagem */
+}
+
+  
+  /* Seção 4: Processo de criação de campanhas */
+.css-0 {
+    background-color: #f9f9f9; /* Fundo para separar visualmente a seção */
+    padding: 40px 0; /* Espaçamento vertical */
+    display: flex;
+    justify-content: center; /* Centraliza o grid horizontalmente */
+}
+
+.chakra-container.css-1xzfefe {
+    text-align: center;
+    width: 80%; /* Define largura para 80% da página */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Configura o layout do grid para os itens da seção de processos */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaçamento entre itens */
+    width: 80%; /* Limita a largura do grid */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+}
+
+/* Cada item do grid */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo das imagens dos ícones */
+.icon-image {
+    width: 80px; /* Define a largura dos ícones */
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o texto abaixo dos ícones */
+.chakra-heading.css-1uh4f88 {
+    color: #888; /* Define a cor cinza para o texto */
+    font-size: 0.8rem; /* Tamanho da fonte ajustado para h3 */
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+  
+  /* Seção 5: Verificação e segurança */
+.css-ye6ryw {
+    display: flex;
+    gap: 0; /* Remove o espaço entre o contêiner da imagem e o contêiner do texto */
+    margin-bottom: 40px;
+    align-items: stretch; /* Garante que ambos os lados ocupem a mesma altura */
+    width: 100%;
+}
+
+.css-1q04xm5 {
+    flex: 1; /* Ocupa 50% da largura */
+}
+
+.css-1q04xm5 img {
+    width: 100%;
+    height: 100%; /* Garante que a imagem ocupe toda a altura do contêiner */
+    object-fit: cover; /* Mantém a proporção da imagem e corta se necessário */
+}
+
+/* Estilização do contêiner de texto */
+.css-vknw87 {
+    flex: 1; /* Ocupa os outros 50% da largura */
+    background-color: #67171f; /* Fundo vermelho para o lado do texto */
+    color: white; /* Define a cor da fonte como branca */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    box-sizing: border-box;
+}
+
+.css-vknw87 h3 {
+    font-size: 1.5rem;
+    color: white; /* Define a cor do título para branco */
+    margin-bottom: 10px;
+}
+
+.css-vknw87 p {
+    color: white; /* Define a cor do texto para branco */
+    margin-top: 10px;
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+  
+  /* Seção 6: Comunicação e equipe */
+.css-1555sv {
+    display: flex;
+    gap: 0; /* Remove o espaço entre o contêiner da imagem e o contêiner do texto */
+    margin-bottom: 40px;
+    align-items: stretch; /* Garante que ambos os lados ocupem a mesma altura */
+    width: 100%;
+}
+
+.css-1q04xm5, .css-1q04xm5 img {
+    flex: 1; /* Ocupa 50% da largura */
+    width: 100%;
+    height: 100%; /* Garante que a imagem ocupe toda a altura do contêiner */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.css-1a8fcng {
+    flex: 1; /* Ocupa os outros 50% da largura */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    box-sizing: border-box;
+}
+
+.css-1a8fcng h3 {
+    font-size: 1.5rem;
+    color: #67171f; /* Define a cor do título */
+    margin-bottom: 10px;
+}
+
+.css-1a8fcng p {
+    color: #444; /* Define a cor do texto para cinza escuro */
+    margin-top: 10px;
+    line-height: 1.6;
+}
+  
+  /* Seção 6: Comunicação e equipe */
+.css-1555sv {
+    display: flex;
+    gap: 0; /* Remove o espaço entre o contêiner da imagem e o contêiner do texto */
+    margin-bottom: 40px;
+    align-items: stretch; /* Garante que ambos os lados ocupem a mesma altura */
+    width: 100%;
+}
+
+.css-1q04xm5 {
+    flex: 1; /* Define a largura de 50% */
+}
+
+.css-1q04xm5 img {
+    width: 100%;
+    height: 400px; /* Define a altura fixa para 400px */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.css-1a8fcng {
+    flex: 1; /* Define a largura de 50% */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    box-sizing: border-box;
+}
+
+.css-1a8fcng h3 {
+    font-size: 1.5rem;
+    color: #67171f; /* Define a cor do título */
+    margin-bottom: 10px;
+}
+
+.css-1a8fcng p {
+    color: #444; /* Define a cor do texto para cinza escuro */
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Seção 7: Desfecho das campanhas */
+.css-12qt9kl {
+    display: flex;
+    gap: 0; /* Remove o espaço entre o contêiner da imagem e o contêiner do texto */
+    align-items: stretch; /* Garante que ambos os lados ocupem a mesma altura */
+    width: 100%;
+}
+
+.css-gc4kvq {
+    flex: 1; /* Define a largura de 50% */
+}
+
+.css-gc4kvq img {
+    width: 100%;
+    height: 400px; /* Define a altura fixa para 400px */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.css-t3p0h8 {
+    flex: 1; /* Define a largura de 50% */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    box-sizing: border-box;
+    background-color: #67171f; /* Fundo vermelho */
+    color: white; /* Texto branco */
+}
+
+.css-t3p0h8 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.css-t3p0h8 p {
+    color: white;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .css-1s9b6is,
+    .css-ye6ryw,
+    .css-1555sv,
+    .css-12qt9kl {
+      flex-direction: column;
+    }
+    
+    .chakra-heading.css-1t2km83 {
+      font-size: 2rem;
+    }
+  
+    .chakra-heading.css-1v99fuf {
+      font-size: 1.7rem;
+    }
+  }
+  

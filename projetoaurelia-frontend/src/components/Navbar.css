@@ -1,0 +1,51 @@
+/* Estilo básico da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o logo e os botões */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #67171f; /* Cor de fundo do menu */
+    color: white;
+  }
+  
+  /* Logo da barra de navegação */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Lista de navegação */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para os links da navegação */
+  .navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #c6a05f;
+  }
+  
+  .navbar-menu li a:hover {
+    background-color: #f5cc7f; /* Muda a cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilo responsivo para telas menores */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Menu vertical em telas menores */
+      align-items: center;
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
