@@ -42,3 +42,12 @@ A plataforma **Aurelia** é um sistema de crowdfunding focado em projetos lidera
 ```bash
 git clone https://github.com/alexjordao86/projetoaurelia.git
 cd projetoaurelia
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## Contato
+
+- **Desenvolvedor:** Alex Jordão  
+- **E-mail:** alexjordao7@gmail.com
