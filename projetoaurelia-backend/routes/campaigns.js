@@ -143,5 +143,24 @@ router.get('/:id', async (req, res) => {
         res.status(500).json({ error: 'Erro ao buscar campanha' }); // Retorna erro genérico ao cliente
     }
 });
+// Rota para excluir uma campanha
+router.delete('/delete/:id', authenticateToken, async (req, res) => {
+    const { id } = req.params; // Extrai o ID da campanha dos parâmetros da rota
+
+    try {
+        // Tenta excluir a campanha do banco de dados
+        const [result] = await db.query('DELETE FROM campaigns WHERE id = ?', [id]);
+
+        // Verifica se alguma campanha foi realmente excluída
+        if (result.affectedRows === 0) {
+            return res.status(404).json({ error: 'Campanha não encontrada' });
+        }
+
+        res.status(200).json({ message: 'Campanha excluída com sucesso!' }); // Retorna sucesso
+    } catch (error) {
+        console.error('Erro ao excluir campanha:', error); // Loga o erro no console
+        res.status(500).json({ error: 'Erro ao excluir campanha' }); // Retorna erro genérico ao cliente
+    }
+});
 
 module.exports = router; // Exporta as rotas para uso no app principal
