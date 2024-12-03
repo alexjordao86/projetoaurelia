@@ -1,0 +1,215 @@
+/* Estilização global do corpo da página */
+body {
+  font-family: 'Arial', sans-serif; /* Define uma fonte global */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+  background-color: #f4f4f4; /* Fundo claro */
+  color: #333; /* Texto principal */
+  width: 100%;
+  margin: 0 auto; /* Centraliza */
+}
+
+/* Aplicação de box-sizing para todos os elementos */
+* {
+  box-sizing: inherit;
+}
+
+/* Estilo para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  padding: 0;
+  font-weight: bold;
+  color: #67171f; /* Vermelho padrão */
+}
+
+.bg-red h1, .bg-red h2, .bg-red h3, .bg-red h4, .bg-red h5, .bg-red h6 {
+  color: white; /* Branco em fundos vermelhos */
+}
+
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5, .bg-white h6 {
+  color: #67171f; /* Vermelho em fundos brancos */
+}
+
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #444; /* Texto cinza escuro */
+}
+
+.bg-red p {
+  color: white; /* Texto em fundos vermelhos */
+}
+
+.bg-white p {
+  color: #444;
+}
+
+/* Links */
+a {
+  color: #c6a05f; /* Dourado */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #67171f; /* Vermelho no hover */
+  text-decoration: underline;
+}
+
+/* Navegação principal */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  background-color: #c6a05f;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #67171f;
+}
+
+/* Contêiner principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Botões */
+button {
+  background-color: #c6a05f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #67171f;
+}
+
+/* Estilo para inputs */
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #c6a05f;
+}
+
+/* Grid de campanhas */
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.campaign-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.campaign-card:hover {
+  transform: scale(1.05);
+}
+
+.campaign-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.campaign-details {
+  padding: 15px;
+}
+
+.campaign-progress {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+}
+
+.progress-fill {
+  background-color: #67171f;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Estilo para o botão "Ver Mais" */
+.view-more-button {
+  background-color: #67171f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: #c6a05f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .campaigns-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .view-more-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #67171f;
+  color: white;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 12px;
+  }
+}

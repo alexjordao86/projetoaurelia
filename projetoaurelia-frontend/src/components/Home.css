@@ -1,0 +1,298 @@
+/* Estilos da página inicial */
+.home-page {
+    font-family: Arial, sans-serif; /* Define a fonte da página para Arial, com fallback sans-serif */
+}
+
+/* Remove as margens entre as seções */
+section {
+    margin: 0; /* Remove margens entre todas as seções */
+}
+
+/* Banner de Boas-vindas */
+.welcome-banner {
+    position: relative; /* Define o banner como posição relativa para permitir o overlay do texto */
+    background-image: url('https://imagens-campanhas-aurelia.s3.us-east-1.amazonaws.com/imagens-plataforma/mulheres_unidas.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço do banner */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: white; /* Define a cor do texto como branco para contraste */
+    text-align: center; /* Centraliza o conteúdo dentro do banner */
+    display: flex; /* Usa flexbox para organizar o conteúdo verticalmente */
+    flex-direction: column; /* Organiza o conteúdo de cima para baixo */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: flex-end; /* Posiciona o conteúdo na parte inferior do banner */
+    height: 400px; /* Define uma altura fixa para o banner */
+    padding: 60px 20px 30px; /* Define espaçamento interno para o texto no banner */
+}
+
+/* Seção de Introdução */
+.about-section {
+    margin-top: 2px; /* Adiciona uma margem de 2px acima da seção */
+    padding: 10px 10px; /* Define o espaçamento interno ao redor da seção */
+    background-color: #c6a05f; /* Define a cor de fundo */
+    text-align: left; /* Centraliza o conteúdo na seção */
+}
+/* Contêiner interno para limitar o conteúdo */
+.about-section .content-wrapper {
+    width: 80%; /* Limita a largura do conteúdo interno a 80% da página */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    display: flex; /* Exibe elementos em linha */
+    justify-content: space-between; /* Alinha o texto à esquerda e o botão à direita */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+/* Estilo para o texto */
+.about-section .text-content {
+    flex: 1; /* Permite que o texto ocupe o espaço necessário */
+}
+
+/* Estilo do título da seção de introdução */
+.about-section h2 {
+    color: #67171f; /* Define a cor do título como branco */
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo do título */
+    line-height: 1.0; /* Reduz o espaçamento entre as linhas (ajuste conforme necessário) */
+    font-weight: bold; /* Aumenta o peso dos caracteres para negrito */
+}
+
+
+/* Botão "Saiba Mais" */
+.learn-more-button {
+    background-color: #67171f; /* Cor de fundo do botão */
+    font-size: 0.9em; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto branco */
+    font-weight: bold; /* Aumenta o peso dos caracteres para negrito */
+    padding: 20px 30px; /* Define o espaçamento interno do botão */
+    border: none; /* Remove qualquer borda */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Define o cursor como uma mãozinha ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave da cor ao passar o mouse */
+}
+
+/* Hover do botão "Saiba Mais" */
+.learn-more-button:hover {
+    background-color: #8b3e4d; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Seção de Campanhas */
+.campaigns-section {
+    padding: 40px 20px; /* Define o espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+/* Grid de campanhas */
+.campaigns-grid {
+    display: grid; /* Exibe as campanhas em formato de grade */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanhos iguais */
+    gap: 20px; /* Espaçamento entre os cards de campanhas */
+    padding: 20px 0; /* Espaçamento superior e inferior no grid */
+    max-width: 80%; /* Limita o grid a ocupar no máximo 80% da largura da página */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+  }
+  
+  .campaign-card {
+    list-style: none; /* Remove as bolinhas dos itens da lista */
+    cursor: pointer; /* Torna o card inteiro clicável */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+  }
+  
+  .chakra-linkbox {
+    position: relative; /* Define o posicionamento relativo do card */
+    background: white; /* Cor de fundo branca para o card */
+    border-radius: 10px; /* Bordas arredondadas do card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do card */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+  }
+  
+  .chakra-linkbox:hover {
+    transform: scale(1.05); /* Aumenta o card ligeiramente ao passar o mouse */
+  }
+  
+  .campaign-content img {
+    width: 100%; /* Largura total da imagem dentro do card */
+    height: 200px; /* Altura fixa da imagem */
+    object-fit: cover; /* Cobre o espaço da imagem sem distorcer */
+    border-radius: 10px 10px 0 0; /* Arredonda as bordas superiores da imagem */
+  }
+  
+  .campaign-details {
+    padding: 15px; /* Espaçamento interno dos detalhes da campanha */
+  }
+  
+  .campaign-category {
+    color: #c6a05f; /* Cor dourada para a categoria */
+    font-weight: bold; /* Negrito para a categoria */
+    text-align: left;
+  }
+  
+  .campaign-title {
+    font-size: 18px; /* Tamanho da fonte do título da campanha */
+    font-weight: bold; /* Negrito para o título */
+    color: #67171f; /* Cor vinho para o título */
+    text-decoration: none; /* Remove sublinhado do título */
+    text-align: left;
+    transition: text-decoration 0.3s ease; /* Transição suave ao passar o mouse */
+  }
+  
+  .chakra-linkbox:hover .campaign-title {
+    text-decoration: underline; /* Sublinhado ao passar o mouse sobre o título */
+  }
+  
+  .campaign-progress {
+    display: flex; /* Exibe o progresso em linha */
+    justify-content: space-between; /* Espaçamento igual entre os itens de progresso */
+    margin: 10px 0; /* Espaçamento acima e abaixo do progresso */
+    font-size: 14px; /* Tamanho menor para o texto do progresso */
+    color: #666; /* Cor cinza para o texto do progresso */
+  }
+  
+  .progress-bar {
+    background-color: #eee; /* Fundo cinza claro para a barra de progresso */
+    border-radius: 10px; /* Bordas arredondadas da barra de progresso */
+    height: 10px; /* Altura fixa da barra de progresso */
+    width: 100%; /* Largura total da barra */
+    margin: 5px 0; /* Espaçamento acima e abaixo da barra */
+  }
+  
+  .progress-fill {
+    background-color: #67171f; /* Cor vinho para o preenchimento da barra */
+    height: 100%; /* Altura total do preenchimento */
+    border-radius: 10px; /* Bordas arredondadas do preenchimento */
+  }
+  
+  .campaign-goal {
+    display: flex; /* Exibe o valor arrecadado e a meta em linha */
+    justify-content: space-between; /* Espaçamento igual entre os valores */
+    font-weight: bold; /* Negrito para os valores */
+    color: #444; /* Cor escura para os textos */
+  }
+  
+
+/* Contêiner do botão "Ver Mais" */
+.view-more-container {
+  width: 80%; /* Define a largura como 80% da página */
+  margin: 0 auto; /* Centraliza horizontalmente o contêiner */
+  display: flex; /* Usa flexbox para alinhar o botão */
+  justify-content: flex-end; /* Alinha o conteúdo (botão) à direita */
+}
+
+/* Botão "Ver Mais" */
+.view-more-button {
+  background-color: #67171f; /* Cor de fundo vinho */
+  color: white; /* Cor do texto branco */
+  padding: 10px 20px; /* Define o espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-weight: bold; /* Define o texto como negrito */
+  margin-top: 10px; /* Define o espaçamento acima do botão */
+  display: inline-block; /* Exibe como bloco inline */
+  cursor: pointer; /* Mostra o cursor de mãozinha */
+  transition: background-color 0.3s ease; /* Animação suave para mudanças de cor */
+}
+
+/* Hover no botão "Ver Mais" */
+.view-more-button:hover {
+  background-color: #c6a05f; /* Cor dourada ao passar o mouse */
+}
+
+/* Ícone do botão "Ver Mais" */
+.button-icon {
+  margin-left: 5px; /* Espaço entre o texto e o ícone */
+}
+
+
+/* Nova seção da tabela */
+.info-table-section {
+  text-align: center; /* Centraliza o texto dentro da seção */
+  margin: 10px 0; /* Reduz as margens verticais para 10px (ajuste conforme necessário) */
+  padding: 0; /* Garante que não haja preenchimento interno adicional */
+}
+
+.info-table-section table {
+    width: 80%; /* Define a largura da tabela como 80% da página */
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    border-collapse: collapse; /* Remove os espaços entre as células da tabela */
+}
+
+.info-table-section td {
+    padding: 20px; /* Adiciona espaçamento interno às células */
+    vertical-align: top; /* Alinha o conteúdo ao topo das células */
+    text-align: center; /* Centraliza o conteúdo dentro das células */
+}
+
+.info-table-section span {
+    display: block; /* Garante que os ícones fiquem em uma linha separada */
+    margin-bottom: 5px; /* Adiciona espaço abaixo dos ícones */
+}
+
+.info-table-section h3 {
+    color: #67171f; /* Define a cor do título como vinho */
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 18px; /* Define o tamanho da fonte */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+.info-table-section p {
+    color: #444; /* Define a cor do texto como cinza escuro */
+    font-size: 14px; /* Define o tamanho da fonte */
+    line-height: 1.5; /* Ajusta o espaçamento entre as linhas do texto */
+    margin: 0; /* Remove margens extras ao redor do texto */
+}
+
+/* Seção "Conte sua história" */
+.tell-your-story {
+    background-color: #c6a05f; /* Cor de fundo dourada */
+    height: 100px; /* Define a altura da seção */
+    width: 100%; /* Faz com que a seção ocupe 100% da largura da página */
+    display: flex; /* Exibe elementos em linha */
+    justify-content: center; /* Centraliza o contêiner interno horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    color: white; /* Define a cor do texto como branco */
+    padding: 0; /* Remove padding externo */
+    margin: 0; /* Remove margem */
+}
+
+/* Contêiner interno para limitar o conteúdo */
+.tell-your-story .content-wrapper {
+    width: 80%; /* Limita a largura do conteúdo interno a 80% da página */
+    display: flex; /* Exibe elementos em linha */
+    justify-content: space-between; /* Alinha o texto à esquerda e o botão à direita */
+}
+
+/* Contêiner de texto da seção "Conte sua história" */
+.story-text {
+    display: flex;
+    flex-direction: column; /* Organiza o texto em coluna */
+    text-align: left; /* Alinha o texto à esquerda */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Título e subtítulo da seção "Conte sua história" */
+.tell-your-story h2 {
+    margin: 0; /* Remove margens */
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte */
+    line-height: 1.1; /* Reduz o espaçamento entre linhas */
+}
+
+.tell-your-story h3 {
+    margin: 4px 0 0; /* Reduz o espaçamento entre o título e o subtítulo */
+    font-size: 1em; /* Define o tamanho da fonte */
+    line-height: 1.1; /* Reduz o espaçamento entre linhas */
+}
+
+/* Estilos do botão "Envie sua história" à direita */
+.story-button {
+    background-color: #67171f; /* Cor de fundo vinho */
+    color: white; /* Cor do texto branco */
+    font-weight: bold; /* Define o peso da fonte */
+    padding: 8px 16px; /* Define o espaçamento interno */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 0.9em; /* Tamanho da fonte */
+    cursor: pointer; /* Define o cursor como mãozinha */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.story-button:hover {
+    background-color: #8b3e4d; /* Altera a cor ao passar o mouse */
+}
+
+

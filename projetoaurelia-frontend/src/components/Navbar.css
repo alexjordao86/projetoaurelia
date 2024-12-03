@@ -1,0 +1,90 @@
+/* Navbar principal */
+.navbar {
+  width: 100%; /* A navbar ocupa 100% da largura da página */
+  height: 100px; /* Define a altura da navbar */
+  background-color: #67171f; /* Define a cor de fundo como vermelho */
+  display: flex;
+  justify-content: center; /* Centraliza o contêiner interno */
+  align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+/* Contêiner interno da navbar */
+.navbar-container {
+  width: 90%; /* Limita a largura da navbar a 80% da página */
+  display: flex;
+  justify-content: space-between; /* Alinha logo e menu nas extremidades */
+  align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+/* Logo da plataforma Aurelia */
+.navbar-logo .logo-image {
+  height: 150px; /* Ajusta a altura da logo para caber no contêiner */
+  object-fit: contain; /* Ajusta o tamanho da imagem para caber na altura especificada */
+}
+
+/* Estilo para o menu da navbar */
+.navbar-menu {
+  display: flex;
+  list-style: none; /* Remove marcadores da lista */
+  gap: 20px; /* Espaçamento entre os itens do menu */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para os links do menu */
+.navbar-menu li a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white; /* Define a cor do texto como branco */
+  font-weight: bold; /* Negrito para os links */
+  padding: 10px 15px; /* Espaçamento interno dos links */
+  border-radius: 5px; /* Arredonda as bordas dos links */
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de hover nos links */
+.navbar-menu li a:hover {
+  background-color: #c6a05f; /* Cor de fundo ao passar o mouse */
+}
+/* Estilização do dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 150px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: red;
+  padding: 8px 16px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #f5f5f5;
+}

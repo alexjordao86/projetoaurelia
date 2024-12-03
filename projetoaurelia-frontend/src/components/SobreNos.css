@@ -1,0 +1,195 @@
+/* Container geral para toda a página */
+.sobre-nos {
+    max-width: 1600px; /* Limita a largura da página */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 0; /* Remove o espaçamento interno do contêiner */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Altura e largura máxima para todas as seções */
+.sobre-nos > div {
+    height: 400px; /* Define altura fixa */
+    width: 100%; /* Define a largura de cada seção como 100% */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura */
+    position: relative; /* Posicionamento relativo para elementos internos */
+}
+
+/* Seção 1: Título principal e imagem de fundo */
+.title-section {
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.background-image, .responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir toda a área */
+}
+
+/* Contêiner para o título sobre a imagem */
+.title-container {
+    position: absolute; /* Sobrepõe o título sobre a imagem */
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -10%); /* Centraliza o texto */
+    text-align: left; /* Centraliza o texto */
+    z-index: 1; /* Coloca o texto acima da imagem */
+    color: white!important;
+}
+
+/* Seção 2: Descrição da plataforma */
+.description-section {
+    display: flex; /* Habilita o layout Flexbox */
+    justify-content: center; /* Centraliza horizontalmente o contêiner de texto */
+    align-items: center; /* Centraliza verticalmente o contêiner de texto */
+    background-color: #67171f; /* Cor de fundo vermelha */
+    padding: 20px; /* Espaçamento interno */
+    height: 100vh; /* Faz a seção ocupar 100% da altura da viewport */
+}
+
+/* Contêiner do texto */
+.text-container {
+    display: flex; /* Habilita o layout Flexbox */
+    flex-direction: column; /* Alinha os parágrafos em uma coluna */
+    justify-content: center; /* Centraliza os parágrafos verticalmente */
+    align-items: flex-start; /* Alinha os parágrafos à esquerda horizontalmente */
+    width: 80%; /* O texto ocupa 80% da largura */
+}
+
+/* Parágrafos */
+.description-text {
+    line-height: 1.6; /* Espaçamento confortável entre linhas */
+    margin: 10px 0; /* Espaçamento entre os parágrafos */
+    color: white; /* Texto branco para fundo vermelho */
+    text-align: justify; /* Justifica o texto dentro do parágrafo */
+    width: 100%; /* Garante que os parágrafos ocupem toda a largura do contêiner pai */
+}
+
+
+/* Seção 3: Funcionamento da Plataforma */
+.how-it-works-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white!important;
+}
+
+.section-title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    text-align: left;
+    z-index: 2;
+    color:white!important;
+}
+
+/* Seção 4: Processo de criação das campanhas */
+.campaign-process-section {
+    display: flex; /* Define um layout flexbox para alinhar os itens */
+    align-items: center; /* Centraliza os itens verticalmente dentro do contêiner */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do contêiner */
+    background-color: #f9f9f9; /* Define uma cor de fundo clara */
+    padding: 20px 30px; /* Adiciona espaçamento vertical acima e abaixo da seção */
+}
+
+/* Parágrafo de descrição na Seção 4 */
+.process-content-container .description-text {
+    width: 80%; /* Faz o parágrafo ocupar 80% da largura disponível */
+    text-align: justify; /* Alinha o texto de forma justificada */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    font-size: 1rem; /* Define o tamanho padrão da fonte */
+    line-height: 1.6; /* Define o espaçamento confortável entre as linhas */
+    color: #444; /* Define a cor do texto como cinza escuro */
+    margin-bottom: 20px;
+}
+
+
+.process-grid {
+    display: grid; /* Define um layout de grade para organizar os itens */
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas iguais na grade */
+    gap: 20px; /* Define o espaçamento entre os itens da grade */
+    width: 80%; /* Define que a grade ocupará 80% da largura da página */
+    margin: 0 auto; /* Centraliza a grade horizontalmente na página */
+}
+
+.grid-item {
+    display: flex; /* Define um layout flexbox para os itens */
+    flex-direction: column; /* Alinha os itens em uma coluna (verticalmente) */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do item */
+}
+
+.icon-image {
+    width: 60px; /* Define a largura da imagem do ícone como 60 pixels */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Contêiner para o conteúdo explicativo */
+.communication-content-container {
+    display: flex; /* Habilita o Flexbox */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: flex-start; /* Alinha os itens à esquerda horizontalmente */
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+
+
+/* Seção 5, 6 e 7: Divididas em metade imagem e metade texto */
+.verification-section, .communication-section, .campaign-conclusion-section {
+    display: flex;
+    align-items: stretch; /* Garante que a altura seja igual */
+    width: 100%;
+}
+
+.verification-image-container, .communication-image-container, .conclusion-image-container,
+.verification-content-container, .communication-content-container, .conclusion-content-container {
+    flex: 1; /* Cada lado ocupa 50% */
+    height: 100%; /* Garante que cada contêiner ocupe 100% da altura */
+}
+
+/* Imagens com altura e largura ajustada */
+.verification-image, .communication-image, .conclusion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém proporção e ajusta a imagem */
+}
+
+/* Conteúdo de texto com fundo */
+.verification-content-container, .conclusion-content-container {
+    background-color: #67171f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Ajuste de títulos e texto */
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Seção 7: Desfecho das campanhas */
+.campaign-conclusion-section {
+    margin-bottom: 3px; /* Adiciona 2px de margem abaixo da seção */
+    background-color: #fff; /* Mantém o fundo branco, se necessário */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .description-section, .verification-section, .communication-section, .campaign-conclusion-section {
+        flex-direction: column;
+        height: auto; /* Permite que a altura se ajuste ao conteúdo em telas menores */
+    }
+
+    .title-container {
+        font-size: 1.8rem;
+    }
+}

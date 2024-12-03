@@ -1,0 +1,49 @@
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .historia-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .historia-form input,
+  .historia-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .historia-form textarea {
+    resize: vertical;
+  }
+  
+  .historia-form .tooltip {
+    font-size: 0.8em;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #67171f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8b3e4d;
+  }
+  

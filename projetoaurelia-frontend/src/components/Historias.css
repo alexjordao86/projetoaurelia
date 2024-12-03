@@ -1,0 +1,45 @@
+.historias-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #67171f;
+  }
+  
+  .historias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .historia-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .historia-card h2 {
+    color: #67171f;
+    margin-bottom: 10px;
+  }
+  
+  .historia-card p {
+    margin: 5px 0;
+  }
+  
+  .arquivos a {
+    display: block;
+    color: #67171f;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .arquivos a:hover {
+    text-decoration: underline;
+  }
+  

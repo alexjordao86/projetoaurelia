@@ -1,0 +1,248 @@
+/* Estilos para a página da campanha */
+.campaign-page-container {
+    width: 90%; /* Largura ajustada para 90% para maior flexibilidade */
+    max-width: 1200px; /* Define uma largura máxima para telas grandes */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
+
+/* Título da campanha */
+.campaign-title {
+    text-align: center; /* Centraliza o título */
+    font-size: 2rem; /* Tamanho grande para o título */
+    color: #67171f; /* Cor vinho */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilização para a imagem */
+.campaign-image-container {
+    text-align: center; /* Centraliza a imagem */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.campaign-image {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    max-height: 400px; /* Limita a altura máxima para evitar imagens desproporcionais */
+    object-fit: cover; /* Garante que a imagem seja cortada de forma proporcional */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar a imagem */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Descrição da campanha */
+.campaign-description {
+    line-height: 1.8; /* Melhora a legibilidade */
+    margin-bottom: 30px; /* Espaçamento inferior */
+    color: #333333; /* Cor de texto escuro */
+    font-size: 1rem; /* Tamanho de fonte padrão */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    background-color: #f9f9f9; /* Fundo claro para destacar a descrição */
+    border-left: 5px solid #c6a05f; /* Barra lateral dourada */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Seção de meta e valor arrecadado */
+.campaign-stats {
+    display: flex; /* Usa flexbox para organizar elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    justify-content: space-between; /* Espaça os itens de forma uniforme */
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #fefefe; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 30px; /* Espaçamento inferior */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra sutil */
+}
+
+.campaign-stats p {
+    margin: 10px 0; /* Espaçamento entre os parágrafos */
+    font-size: 1.2rem; /* Fonte maior para destaque */
+    color: #555; /* Cor de texto cinza */
+}
+
+/* Barra de progresso */
+.progress-bar-container {
+    background-color: #ddd; /* Fundo cinza claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa os limites */
+    height: 20px; /* Altura da barra */
+    margin: 10px 0; /* Espaçamento vertical */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.progress-bar {
+    height: 100%; /* Altura total da barra */
+    background-color: #67171f; /* Cor vinho */
+    transition: width 0.5s ease-in-out; /* Animação suave ao carregar */
+}
+
+/* Estilo para o botão "Doe Agora" */
+.donate-button {
+    background-color: #c6a05f; /* Cor dourada */
+    color: white; /* Texto branco */
+    font-size: 1.2rem; /* Tamanho grande para chamar atenção */
+    padding: 15px 30px; /* Espaçamento interno */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+    margin: 0 auto; /* Centraliza o botão */
+    display: block; /* Ocupa toda a largura em dispositivos pequenos */
+    max-width: 300px; /* Limita a largura máxima */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão */
+}
+
+.donate-button:hover {
+    background-color: #a88345; /* Cor dourada mais escura ao passar o mouse */
+}
+
+/* Dias restantes */
+.days-remaining {
+    font-size: 1rem; /* Tamanho de fonte padrão */
+    color: #67171f; /* Cor vinho */
+    font-weight: bold; /* Negrito para destaque */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilização para novidades e doadores */
+.campaign-news,
+.campaign-donors {
+    margin-top: 30px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fefefe; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+}
+
+.campaign-news h2,
+.campaign-donors h2 {
+    font-size: 1.5rem; /* Tamanho maior para o título */
+    color: #67171f; /* Cor vinho */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.campaign-news p,
+.campaign-donors p {
+    font-size: 1rem; /* Tamanho padrão de fonte */
+    color: #555; /* Cor cinza */
+}
+
+.campaign-donors ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+}
+
+.campaign-donors li {
+    margin-bottom: 10px; /* Espaçamento inferior entre itens */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+
+/* Estilos para o modal */
+.modal {
+    position: fixed;  /* Fixa o modal em relação à janela do navegador */
+    top: 0;  /* Alinha o topo do modal ao topo da janela */
+    left: 0;  /* Alinha a esquerda do modal à borda esquerda da janela */
+    width: 100%;  /* O modal ocupa toda a largura da tela */
+    height: 100%;  /* O modal ocupa toda a altura da tela */
+    background: rgba(0, 0, 0, 0.5);  /* Fundo semi-transparente preto */
+    display: flex;  /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center;  /* Centraliza o modal horizontalmente */
+    align-items: center;  /* Centraliza o modal verticalmente */
+    z-index: 9999;  /* Define a prioridade de sobreposição do modal */
+}
+
+.modal-content {
+    background: white;  /* Fundo branco para o conteúdo do modal */
+    padding: 20px;  /* Adiciona espaçamento interno de 20px */
+    border-radius: 10px;  /* Adiciona bordas arredondadas de 10px */
+    width: 80%;  /* Define a largura como 80% da tela */
+    max-width: 600px; /* Limita a largura máxima a 600px */
+    position: relative;  /* Define o posicionamento relativo para ajustes internos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Adiciona uma sombra ao redor do modal */
+}
+
+.modal-content h2 {
+    text-align: center;  /* Centraliza o título dentro do modal */
+    margin-bottom: 20px;  /* Adiciona espaçamento inferior ao título */
+    font-size: 24px;  /* Define o tamanho da fonte do título */
+    color: #67171f;  /* Cor vinho para o título */
+}
+
+.modal-content label {
+    display: block;  /* Faz com que o rótulo ocupe toda a linha */
+    margin: 10px 0 5px;  /* Espaçamento em volta do rótulo (superior: 10px, inferior: 5px) */
+    font-weight: bold;  /* Define o texto do rótulo como negrito */
+    color: #444;  /* Cor cinza escuro para o rótulo */
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="tel"] {
+    width: 100%;  /* O campo ocupará toda a largura disponível */
+    padding: 10px;  /* Adiciona espaçamento interno de 10px */
+    margin-bottom: 10px;  /* Adiciona espaçamento inferior de 10px */
+    border: 1px solid #ddd;  /* Adiciona uma borda cinza clara */
+    border-radius: 5px;  /* Adiciona bordas arredondadas de 5px */
+    font-size: 16px;  /* Define o tamanho da fonte dos campos */
+}
+
+.modal-content input[type="radio"] {
+    margin-right: 5px;  /* Adiciona um espaçamento à direita de 5px */
+}
+
+.modal-content p {
+    font-size: 14px;  /* Define o tamanho da fonte dos parágrafos */
+    color: #666;  /* Cor cinza para o texto */
+    margin-top: 10px;  /* Adiciona espaçamento superior de 10px */
+}
+
+.modal-content button {
+    background-color: #c6a05f;  /* Cor dourada para o botão */
+    color: white;  /* Texto branco no botão */
+    border: none;  /* Remove bordas padrão */
+    padding: 10px 20px;  /* Adiciona espaçamento interno (vertical: 10px, horizontal: 20px) */
+    border-radius: 5px;  /* Adiciona bordas arredondadas de 5px */
+    cursor: pointer;  /* Muda o cursor para "mãozinha" ao passar sobre o botão */
+    font-size: 16px;  /* Define o tamanho da fonte do botão */
+    width: 100%;  /* O botão ocupa toda a largura disponível */
+    margin-top: 20px;  /* Adiciona espaçamento superior de 20px */
+}
+
+.modal-content button:hover {
+    background-color: #b58f4f;  /* Cor dourada mais escura ao passar o mouse */
+}
+
+.close-button {
+    background: none;  /* Remove o fundo padrão */
+    border: none;  /* Remove bordas padrão */
+    font-size: 16px;  /* Define o tamanho da fonte do botão de fechar */
+    color: #67171f;  /* Cor vinho para o botão de fechar */
+    cursor: pointer;  /* Muda o cursor para "mãozinha" ao passar sobre o botão */
+    margin-top: 10px;  /* Adiciona espaçamento superior de 10px */
+    text-align: center;  /* Centraliza o texto no botão */
+}
+
+.close-button:hover {
+    text-decoration: underline;  /* Sublinha o texto ao passar o mouse */
+}
+.back-button {
+    background: none; /* Remove qualquer preenchimento ou borda */
+    border: none; /* Remove borda padrão */
+    color: #67171f; /* Cor vinho */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    margin-top: 10px; /* Espaçamento superior */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

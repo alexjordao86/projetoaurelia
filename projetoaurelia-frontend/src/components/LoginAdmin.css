@@ -1,0 +1,65 @@
+/* Estilos gerais para o contêiner principal */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    padding: 20px;
+  }
+  
+  /* Estilo do cabeçalho */
+  h2 {
+    font-size: 24px;
+    color: #67171f; /* Vermelho principal */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo para os campos de entrada */
+  input {
+    width: 80%; /* Ocupa 80% da largura do contêiner */
+    max-width: 400px; /* Largura máxima para dispositivos maiores */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Bordas suaves */
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    transition: border-color 0.3s ease; /* Anima a borda no foco */
+  }
+  
+  /* Cor da borda ao focar nos inputs */
+  input:focus {
+    border-color: #67171f;
+    outline: none; /* Remove a borda azul padrão */
+  }
+  
+  /* Botão de login */
+  button {
+    background-color: #c6a05f; /* Amarelo dourado */
+    color: white; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Anima a mudança de cor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+    margin-top: 15px;
+  }
+  
+  /* Cor ao passar o mouse no botão */
+  button:hover {
+    background-color: #67171f; /* Vermelho principal */
+  }
+  
+  /* Estilo para mensagens de erro */
+  p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,283 @@
+/* Estilos gerais para o container da página de campanhas */
+.chakra-container {
+  padding: 20px; /* Espaçamento interno do container */
+  background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+/* Título da página Campanhas */
+.campaigns-title {
+  text-align: center; /* Centraliza o título */
+  font-size: 2em; /* Define um tamanho grande para o título */
+  color: #67171f; /* Cor vinho, consistente com o tema */
+  margin: 20px 0; /* Adiciona espaço acima e abaixo do título */
+  font-weight: bold; /* Deixa o título em negrito */
+}
+
+/* Contêiner principal da seção de categorias */
+.categories-container {
+  width: 80%; /* Define a largura como 80% da página */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  display: flex; /* Usa flexbox para alinhamento */
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  padding: 5px 0; /* Espaçamento interno acima e abaixo */
+}
+
+/* Estilo do filtro de categorias */
+.filter-section {
+  text-align: center; /* Centraliza o filtro */
+  color: #67171f; /* Cor vinho para o título */
+  font-weight: bold; /* Negrito para destacar as categorias */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+#category-filter {
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #c6a05f; /* Borda dourada */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  color: #444; /* Cor do texto */
+  outline: none; /* Remove o contorno padrão */
+  background-color: #fff; /* Fundo branco */
+  cursor: pointer; /* Mostra cursor de mão */
+  transition: border-color 0.3s ease; /* Animação suave na borda */
+}
+
+#category-filter:hover {
+  border-color: #67171f; /* Cor vinho ao passar o mouse */
+}
+
+/* Barra de rolagem horizontal de categorias */
+.categories-scroll {
+  display: flex; /* Exibe as categorias em linha usando flexbox */
+  align-items: center; /* Centraliza verticalmente as categorias */
+  justify-content: space-between; /* Distribui os itens de forma homogênea */
+  overflow-x: auto; /* Permite rolagem horizontal quando necessário */
+  padding: 10px 0; /* Espaçamento superior e inferior da barra */
+  width: 100%; /* O contêiner ocupa 100% da largura do pai */
+  scrollbar-width: thin; /* Estiliza a largura da barra de rolagem no Firefox */
+  scrollbar-color: #ddd transparent; /* Define as cores da barra de rolagem no Firefox */
+}
+
+.categories-scroll::-webkit-scrollbar {
+  height: 6px; /* Altura da barra de rolagem */
+}
+
+.categories-scroll::-webkit-scrollbar-thumb {
+  background-color: #ddd; /* Cor da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas na barra */
+}
+
+/* Botões de categorias */
+.category-button {
+  padding: 10px 20px; /* Espaçamento interno */
+  border: 1px solid #ddd; /* Borda cinza clara */
+  border-radius: 20px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito */
+  color: #444; /* Cor do texto */
+  background-color: white; /* Fundo branco */
+  cursor: pointer; /* Cursor de mãozinha */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animação para mudanças de cor */
+}
+
+.category-button:hover {
+  background-color: #c6a05f; /* Fundo dourado ao passar o mouse */
+  color: white; /* Texto branco ao passar o mouse */
+}
+
+.active-category {
+  background-color: #c6a05f; /* Fundo dourado para a categoria ativa */
+  color: white; /* Texto branco para a categoria ativa */
+  border: 1px solid #c6a05f; /* Borda consistente com o fundo */
+}
+
+/* Setas de rolagem */
+.scroll-arrow {
+  display: flex; /* Exibe as setas de rolagem como flexbox */
+  align-items: center; /* Centraliza verticalmente as setas */
+}
+
+.scroll-arrow.scroll-left {
+  margin-right: 10px; /* Espaçamento à direita da seta esquerda */
+}
+
+.scroll-arrow.scroll-right {
+  margin-left: 10px; /* Espaçamento à esquerda da seta direita */
+}
+
+.scroll-button {
+  background: transparent; /* Remove o fundo padrão do botão */
+  border: none; /* Remove as bordas padrão do botão */
+  cursor: pointer; /* Cursor de mãozinha ao passar sobre o botão */
+  color: #666; /* Define a cor cinza para as setas */
+  font-size: 20px; /* Tamanho das setas */
+  transition: color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.scroll-button:hover {
+  color: #c6a05f; /* Cor dourada ao passar o mouse */
+}
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+  .category-button {
+    max-width: 100%; /* Botões ocupam toda a largura em telas menores */
+    margin: 0; /* Remove espaçamento extra em dispositivos menores */
+  }
+}
+/* Grid de campanhas */
+.campaigns-grid {
+  display: grid; /* Exibe as campanhas em formato de grade */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo para colunas */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px 0; /* Espaçamento superior e inferior */
+  max-width: 80%; /* Limita o grid a ocupar no máximo 80% da largura */
+  margin: 0 auto; /* Centraliza o grid horizontalmente */
+}
+
+.campaign-card {
+  list-style: none; /* Remove as bolinhas dos itens da lista */
+  cursor: pointer; /* Torna o card inteiro clicável */
+  margin: 0; /* Remove margens externas */
+}
+
+.chakra-linkbox {
+  position: relative; /* Define o posicionamento relativo do card */
+  background: white; /* Cor de fundo branca para o card */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.chakra-linkbox:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+.campaign-content img {
+  width: 100%; /* Largura total da imagem */
+  height: 200px; /* Altura fixa */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  border-radius: 10px 10px 0 0; /* Bordas arredondadas superiores */
+}
+
+.campaign-details {
+  padding: 15px; /* Espaçamento interno */
+}
+
+.campaign-category {
+  color: #c6a05f; /* Cor dourada */
+  font-weight: bold; /* Negrito */
+}
+
+.campaign-title {
+  font-size: 18px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #67171f; /* Cor vinho */
+  text-decoration: none; /* Remove sublinhado */
+  transition: text-decoration 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.chakra-linkbox:hover .campaign-title {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilo para campanhas encerradas */
+.campaign-closed {
+  text-align: center; /* Centraliza o texto */
+  color: #999; /* Cinza claro */
+  font-size: 16px; /* Tamanho moderado */
+  font-weight: bold; /* Negrito */
+}
+
+/* Barra de progresso */
+.campaign-progress {
+  display: flex; /* Exibe em linha */
+  justify-content: space-between; /* Espaçamento igual entre itens */
+  margin: 10px 0; /* Espaçamento vertical */
+  font-size: 14px; /* Tamanho menor */
+  color: #666; /* Cor cinza */
+}
+
+.progress-bar {
+  background-color: #eee; /* Fundo cinza claro */
+  border-radius: 10px; /* Bordas arredondadas */
+  height: 10px; /* Altura fixa */
+  width: 100%; /* Largura total */
+  margin: 5px 0; /* Espaçamento vertical */
+}
+
+.progress-fill {
+  background-color: #67171f; /* Cor vinho */
+  height: 100%; /* Altura total */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Meta e arrecadação */
+.campaign-goal {
+  display: flex; /* Exibe os valores em linha */
+  justify-content: space-between; /* Espaçamento entre os valores */
+  font-weight: bold; /* Negrito */
+  color: #444; /* Cor escura */
+}
+
+
+/* Seção "Outras formas de apoiar" */
+.other-ways-to-support {
+  background-color: #c6a05f; /* Cor de fundo dourada */
+  height: 100px; /* Define a altura da seção */
+  width: 100%; /* Faz com que a seção ocupe 100% da largura da página */
+  display: flex; /* Exibe elementos em linha */
+  justify-content: center; /* Centraliza o contêiner interno horizontalmente */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  color: #67171f; /* Define a cor do texto como branco */
+  padding: 0; /* Remove padding externo */
+  margin: 0; /* Remove margem */
+}
+
+/* Contêiner interno para limitar o conteúdo */
+.other-ways-to-support .content-wrapper {
+  width: 80%; /* Limita a largura do conteúdo interno a 80% da página */
+  display: flex; /* Exibe elementos em linha */
+  justify-content: space-between; /* Alinha o texto à esquerda e o botão à direita */
+}
+
+/* Contêiner de texto da seção "Outras formas de apoiar" */
+.other-ways-to-support-text {
+  display: flex;
+  flex-direction: column; /* Organiza o texto em coluna */
+  text-align: left; /* Alinha o texto à esquerda */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Título e subtítulo da seção "Outras formas de apoiar" */
+.other-ways-to-support h2 {
+  margin: 0; /* Remove margens */
+  font-size: 1.5em; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define o peso da fonte */
+  line-height: 1.1; /* Reduz o espaçamento entre linhas */
+  color: #67171f; /* Cor principal */
+}
+
+.other-ways-to-support h3 {
+  margin: 4px 0 0; /* Reduz o espaçamento entre o título e o subtítulo */
+  font-size: 1em; /* Define o tamanho da fonte */
+  line-height: 1.1; /* Reduz o espaçamento entre linhas */
+  color: #c6a05f; /* Cor secundária */
+}
+
+/* Estilos do botão "Saiba como ajudar" à direita */
+.support-button {
+  background-color: #67171f; /* Cor de fundo vinho */
+  color: white; /* Cor do texto branco */
+  font-weight: bold; /* Define o peso da fonte */
+  padding: 8px 16px; /* Define o espaçamento interno */
+  border: none; /* Remove borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 0.9em; /* Tamanho da fonte */
+  cursor: pointer; /* Define o cursor como mãozinha */
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.support-button:hover {
+  background-color: #8b3e4d; /* Altera a cor ao passar o mouse */
+}

@@ -1,0 +1,67 @@
+.support-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .support-title {
+    font-size: 2.5em;
+    color: #67171f;
+    margin-bottom: 20px;
+  }
+  
+  .support-intro {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 40px;
+  }
+  
+  .support-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .support-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .support-image {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .support-card h2 {
+    font-size: 1.5em;
+    color: #67171f;
+    margin-bottom: 10px;
+  }
+  
+  .support-card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .support-contact {
+    margin-top: 40px;
+    font-size: 1.2em;
+  }
+  
+  .support-contact a {
+    color: #67171f;
+    text-decoration: none;
+  }
+  
+  .support-contact a:hover {
+    text-decoration: underline;
+  }
+  

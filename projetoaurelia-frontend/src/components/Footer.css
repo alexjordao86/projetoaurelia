@@ -1,0 +1,64 @@
+/* Estilos principais do footer */
+.footer {
+    background-color: #67171f; /* Cor de fundo igual ao header */
+    padding: 20px 0; /* Espaçamento interno do footer */
+    color: white; /* Define a cor do texto como branco */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do footer */
+    margin-top: 0; /* Remove margem acima */
+    margin-bottom: 0; /* Remove margem abaixo */
+}
+
+/* Contêiner interno para limitar a largura a 80% */
+.footer-container {
+    width: 80%; /* Limita a largura do footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo para os links do footer */
+.footer-links,
+.footer-social,
+.footer-contact {
+    margin: 10px 0; /* Espaçamento entre seções do footer */
+}
+
+/* Estilo para links do footer */
+.footer-links a {
+    color: white; /* Define a cor dos links como branco */
+    margin: 0 10px; /* Espaçamento horizontal entre os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold; /* Negrito para os links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para ícones das redes sociais */
+.footer-social a {
+    color: white; /* Define a cor dos ícones como branco */
+    margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+    font-size: 1.5em; /* Aumenta o tamanho dos ícones */
+    transition: color 0.3s; /* Transição de cor ao passar o mouse */
+}
+
+.footer-social a:hover {
+    color: #c6a05f; /* Muda a cor ao passar o mouse */
+}
+
+/* Estilo para a seção de contato */
+.footer-contact p {
+    margin: 0; /* Remove margem do parágrafo do endereço */
+}
+
+.footer-contact a {
+    color: white; /* Define a cor do link como branco */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.footer-contact a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

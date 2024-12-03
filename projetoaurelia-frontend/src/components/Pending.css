@@ -1,0 +1,40 @@
+.pending-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.pending-content {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.pending-content h1 {
+    font-size: 2.5em;
+    color: #67171f;
+    margin-bottom: 20px;
+}
+
+.pending-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pending-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.pending-content p:last-of-type {
+    font-weight: bold;
+    color: #67171f;
+}
